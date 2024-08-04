@@ -3,11 +3,13 @@ $(document).ready(function () {
   var swiper = new Swiper(".homBanner", {
     pagination: {
       el: ".homBanner .swiper-pagination",
+      clickable: true
     },
   });
   var swiper = new Swiper(".mySwiperNews", {
     pagination: {
       el: ".mySwiperNews .swiper-pagination",
+      clickable: true
     },
   });
 
@@ -22,14 +24,22 @@ $(document).ready(function () {
       // when window width is >= 320px
       320: {
         slidesPerView: 1,
-        spaceBetween: 20,
+        spaceBetween: 0,
       },
       // when window width is >= 640px
       767: {
         slidesPerView: 2,
-        spaceBetween: 20,
+        spaceBetween: 24,
+      },
+      992: {
+        slidesPerView: 1,
+        spaceBetween: 24,
       },
       1200: {
+        slidesPerView: 2,
+        spaceBetween: 24,
+      },
+      1400: {
         slidesPerView: 3,
         spaceBetween: 24,
       },
@@ -46,7 +56,7 @@ $(document).ready(function () {
       nextEl: ".mySwipeOffer2 .swiper-button-next",
       prevEl: ".mySwipeOffer2 .swiper-button-prev",
     },
-        breakpoints: {
+    breakpoints: {
       // when window width is >= 320px
       320: {
         slidesPerView: 1,
@@ -55,9 +65,17 @@ $(document).ready(function () {
       // when window width is >= 640px
       767: {
         slidesPerView: 2,
-        spaceBetween: 20,
+        spaceBetween: 24,
+      },
+      992: {
+        slidesPerView: 1,
+        spaceBetween: 24,
       },
       1200: {
+        slidesPerView: 2,
+        spaceBetween: 24,
+      },
+      1400: {
         slidesPerView: 3,
         spaceBetween: 24,
       },
@@ -72,8 +90,9 @@ $(document).ready(function () {
     spaceBetween: 24,
     pagination: {
       el: ".electWrapper .swiper-pagination",
+      clickable: true
     },
-        breakpoints: {
+    breakpoints: {
       // when window width is >= 320px
       320: {
         slidesPerView: 1,
@@ -82,9 +101,17 @@ $(document).ready(function () {
       // when window width is >= 640px
       767: {
         slidesPerView: 2,
-        spaceBetween: 20,
+        spaceBetween: 24,
+      },
+      992: {
+        slidesPerView: 1,
+        spaceBetween: 24,
       },
       1200: {
+        slidesPerView: 2,
+        spaceBetween: 24,
+      },
+      1400: {
         slidesPerView: 3,
         spaceBetween: 24,
       },
@@ -99,6 +126,7 @@ $(document).ready(function () {
 });
 
 if( $('.ourNumSec').length ) {
+  document.getElementsByTagName('body')[0].style.backgroundColor = '#f9fafb';
   jQuery(function ($) {
     "use strict";
   

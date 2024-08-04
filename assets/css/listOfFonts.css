@@ -1,0 +1,24 @@
+
+
+
+
+.fonts {
+        font-size: var( --text-2xs-semibold-font-size); /* font 10 */
+        font-size: var( --text-xs-regular-font-size); /* font 12px */
+        font-size: var(--text-sm-regular-font-size); /* font 14px */
+        font-size: var(--text-md-medium-font-size); /* font 16px */
+        font-size: var(--text-lg-bold-font-size); /* font 18px */
+        font-size: var(--text-xl-regular-font-size); /* font 20px */
+        font-size: var(--display-xs-semibold-font-size); /* font 24px */
+        font-size: var(--display-md-medium-font-size); /* font 36px */
+        font-size: var(--display-lg-medium-font-size); /* font 48px */
+    /* --text-2xs-semibold-font-size: 10px;
+    --text-xs-regular-font-size: 12px;
+    --text-sm-regular-font-size: 14px;
+    --text-md-medium-font-size: 16px;
+    --text-lg-bold-font-size: 18px;
+    --text-xl-regular-font-size: 20px;
+    --display-xs-semibold-font-size: 24px;
+    --display-md-medium-font-size: 36px;
+    --display-lg-medium-font-size: 48px; */
+}
