@@ -73,7 +73,13 @@ img {
   background: #fff;
   color: var(--themes-text-text-default);
 }
-
+#s4-workspace {
+  overflow: visible;
+  height: auto !important;
+}
+#s4-bodyContainer {
+  padding-bottom: 0;
+}
 .row > * {
   padding-#{$start-direction}: 12px;
   padding-#{$end-direction}: 12px;
@@ -307,6 +313,7 @@ img {
     position: relative;
     .nav-link {
       display: inline-flex;
+      text-decoration: unset;
       align-items: center;
       justify-content: center;
       gap: var(--spacing-tab-tab-button-gap);
@@ -423,6 +430,14 @@ img {
             max-width: 1280px;
           }
           h4.title {
+            .dropdownTitle {
+              margin-bottom: 12px;
+              font-size: var(--text-lg-bold-font-size);
+              font-weight: var(--text-lg-bold-font-weight);
+              letter-spacing: var(--text-lg-bold-letter-spacing);
+              line-height: var(--text-lg-bold-line-height);
+              color: var(--themes-text-text-oncolor-primary);
+            }
             margin-bottom: 12px;
             font-size: var(--text-lg-bold-font-size);
             font-weight: var(--text-lg-bold-font-weight);
@@ -1965,7 +1980,9 @@ img {
     }
   }
 }
-
+.toggleOptions {
+  display: none;
+}
 .customArrow {
   .swiper-button-next,
   .swiper-button-prev {
@@ -2013,6 +2030,7 @@ img {
       display: flex;
       width: 100%;
       align-items: center;
+      justify-content: center;
       height: 100%;
     }
     .searchInput {
@@ -2268,6 +2286,7 @@ img {
     }
   }
   .bodyX {
+    overflow-x: hidden;
     box-shadow: var(--shadows-shadow-md);
     gap: var(--spacing-card-card-lg-gap);
     padding: var(--spacing-global-spacing-xl);
@@ -2362,11 +2381,12 @@ img {
 }
 
 .innerBanner {
-  padding-bottom: 74px;
-  min-height: 325px;
-  position: relative;
+  background: #1b8354;
+  height: 150px;
+  padding: 0;
   display: flex;
-  align-items: end;
+  align-items: center;
+  position: relative;
 
   &::after,
   .BgBnr {
@@ -2377,6 +2397,7 @@ img {
     width: 100%;
     top: 0;
     z-index: -1;
+    display: none;
   }
   &::after {
     background-color: rgba(0, 0, 0, 0.65);
@@ -2384,6 +2405,7 @@ img {
   .linksBnr {
     display: flex;
     justify-content: left;
+    padding-top: 20px;
     a {
       @extend .bgLogo;
       &:not(:last-of-type) {
@@ -2533,7 +2555,7 @@ img {
       @extend .flexCenter;
       .pRate {
         margin-left: 43px;
-        font-weight: 700px;
+        font-weight: 700;
         font-size: 16px;
         color: var(--themes-text-text-primary-paragraph);
       }
@@ -2639,7 +2661,7 @@ img {
   }
   textarea,
   input {
-    padding: 5px  16px;
+    padding: 5px 16px;
     border-radius: var(--radius-radius-radius-sm);
     border-color: var(--themes-form-field-border-default);
   }
@@ -2667,4 +2689,73 @@ img {
     font-size: 16px;
     margin-left: 5px;
   }
+}
+
+.contrast .menuWithBanner,
+.contrast .modalSearch,
+.contrast .breadcrumb,
+.contrast > div,
+.contrast > section,
+.contrast #s4-bodyContainer div:not([class]) > *,
+.contrast #s4-bodyContainer .menuWithBanner,
+.contrast #s4-bodyContainer .modalSearch,
+.contrast #s4-bodyContainer .breadcrumb,
+.contrast #s4-bodyContainer > div,
+.contrast #s4-bodyContainer > section,
+.contrast .innerBanner,
+.contrast .HappensNowPuple,
+.contrast a.scrollTop {
+  -webkit-filter: grayscale(100%) brightness(95%) contrast(120%);
+  filter: grayscale(100%) brightness(95%) contrast(120%);
+}
+
+.contrast #s4-bodyContainer div:not([class]) > .ms-dialogHidden {
+  -webkit-filter: unset;
+  filter: unset;
+}
+
+.contrast
+  #s4-bodyContainer
+  .menuBg
+  .customContainer
+  .navbarCustom
+  .navbar-brand,
+.contrast
+  #s4-bodyContainer
+  .menuBg
+  .customContainer
+  .navbarCustom
+  .navbar-toggler,
+.contrast #s4-bodyContainer .menuBg .navbarCustom .nav-item .nav-link,
+.contrast #s4-bodyContainer .navbarCustom .dropdown .dropdown-menu,
+.contrast footer,
+.contrast iframe {
+  -webkit-filter: grayscale(100%) brightness(95%) contrast(120%);
+  filter: grayscale(100%) brightness(95%) contrast(120%);
+}
+
+.breadcrumb ul.items a:not(.breadCrumbRoot):not(.active) {
+  margin-left: 35px;
+  position: relative;
+}
+.breadcrumb ul.items a:not(.breadCrumbRoot):not(.active)::after {
+  content: "";
+  position: absolute;
+  left: -24px;
+  top: 5px;
+  height: 16px;
+  width: 16px;
+  background-image: url(../images/shared/old-chevron-left-3.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.ElectronicSec .electWrapper .cardElct > a {
+  text-decoration: unset;
+}
+.ElectronicSec .electWrapper .cardElct > a .font18 {
+  text-decoration: underline;
+}
+.ElectronicSec .electWrapper .cardElct {
+  min-height: 200px;
 }

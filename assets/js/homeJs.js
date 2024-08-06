@@ -126,7 +126,7 @@ $(document).ready(function () {
 });
 
 if( $('.ourNumSec').length ) {
-  document.getElementsByTagName('body')[0].style.backgroundColor = '#f9fafb';
+  document.getElementsByTagName('body')[0].style.backgroundColor = '#efefef';
   jQuery(function ($) {
     "use strict";
   
