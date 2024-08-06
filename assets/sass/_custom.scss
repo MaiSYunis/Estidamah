@@ -2749,11 +2749,11 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
 }
-
+.menuWithBanner .navbarMenu .navbar-nav .nav-link,
 .ElectronicSec .electWrapper .cardElct > a {
   text-decoration: unset;
 }
-.ElectronicSec .electWrapper .cardElct > a .font18 {
+.ElectronicSec .electWrapper .cardElct > a:hover .font18 {
   text-decoration: underline;
 }
 .ElectronicSec .electWrapper .cardElct {
