@@ -8,7 +8,7 @@
   background: var(--Background-background-notification-white, #fff);
   /* Shadows/shadow-lg */
   box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
-  min-height: 128px;
+  min-height: 150px;
   position: relative;
   padding-bottom: 62px;
 }
@@ -335,7 +335,7 @@ font-size: var(--text-md-medium-font-size);
 }
 @media (max-width: 1400px) {
   .Evaluation2 .alertEvaluation .right strong {
-    font-size: 1rem;
+    font-size: var(--text-md-medium-font-size);
     padding: 0 15px;
   }
   .Evaluation2 .alertEvaluation .right .btnGreen {
@@ -343,7 +343,7 @@ font-size: var(--text-md-medium-font-size);
   }
   .Evaluation2 .alertEvaluation .right .btnSmall {
     min-width: auto;
-    font-size: 1rem;
+    font-size: var(--text-md-medium-font-size);
   }
   .Evaluation2 .alertEvaluation .right img {
     width: 35px;
@@ -359,7 +359,7 @@ font-size: var(--text-md-medium-font-size);
     font-size: 0.875rem;
   }
   .Evaluation .evaluationBox {
-    margin-left: 10px;
+    margin-left: 20px;
   }
   .Evaluation .evaluationBox strong {
     margin-left: 5px;
@@ -369,7 +369,12 @@ font-size: var(--text-md-medium-font-size);
     flex-wrap: wrap;
   }
 }
-
+@media (max-width: 1200px) {
+  .Evaluation .evaluationBox {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+}
 @media (max-width: 992px) {
   .Evaluation .left-sec .last-edit {
     -webkit-box-pack: start;
@@ -379,5 +384,31 @@ font-size: var(--text-md-medium-font-size);
   }
   .Evaluation .white-sec {
     padding: 15px;
+  }
+  .Evaluation2 .alertEvaluation {
+    flex-direction: column-reverse;
+  }
+  .Evaluation2 .alertEvaluation .left {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .Evaluation .white-sec .col-lg-6:last-of-type,
+  .Evaluation .white-sec .col-lg-6:first-of-type {
+    width: 100%;
+  }
+  .Evaluation .evaluationBox {
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+  .Evaluation2 .alertEvaluation .left p {
+    font-size: var(--text-sm-regular-font-size);
+  }
+  .Evaluation2 .alertEvaluation .right .btnSmall {
+    bottom: 15px;
+  }
+  .Evaluation2 .alertEvaluation .right strong {
+    font-size: var(--text-md-medium-font-size);
+    margin: 0;
   }
 }

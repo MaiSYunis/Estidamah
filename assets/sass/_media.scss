@@ -270,13 +270,17 @@
   .services-sec .services-box .serv-box {
     height: 100%;
   }
-
+  .aimSec .col-md-3 {
+    width: 50%;
+    margin-bottom: 20px;
+}
   /* end 1200 */
 }
 @media (max-width: 991.98px) {
   .weAreSec .col-md-7,
   .weAreSec .col-md-5,
   .newHome .col-md-6,
+  .textWithCards .col-md-6,
   .bannerMenu .contentBanner .BNRtxt p,
   .awareness-sec .col-lg-8,
   .services-sec .col-lg-8,
@@ -288,6 +292,9 @@
   .researchSec .col-md-3 {
     flex: 0 0 auto;
     width: 50%;
+  }
+  .textWithCards .col-md-6 {
+    margin-bottom: 20px;
   }
   .services-sec .right-sec.with-shape::before {
     display: none;
@@ -579,7 +586,27 @@
   .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu ul li {
     min-height: auto;
   }
-
+  .aimSec .col-md-3 {
+    width: 100%;
+    }
+    .textWithCards {
+        padding: 64px 0 24px 0;
+    }
+    .aimSec .textAim .p20 {
+        margin-bottom: 35px;
+    }
+    .aimSec {
+        padding: 45px 0 25px 0;
+    }
+    .breadcrumb ul.items a {
+        font-size: var(--text-xs-regular-font-size);
+    }
+    .customAccordion .accordion-item .accordion-button {
+        font-size: var(--text-lg-bold-font-size);
+    }
+    .customAccordion .p18 {
+        font-size: var(--text-md-medium-font-size);
+    }
   /* end 767 */
 }
 
@@ -592,9 +619,11 @@
   .bannerMenu .contentBanner .BNRtxt h1 {
     // font-size: var(--display-xs-semibold-font-size);
   }
-
+  .innerBanner .titleBnr {
+    font-size: var(--display-xs-semibold-font-size);
+  }
   /* font 18*/
-
+  .p20,
   .awareness-sec .right-sec .mainTitle,
   .ourNumSec .numText .p20,
   .services-sec .right-sec .mainTitle {
