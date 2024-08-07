@@ -50,6 +50,29 @@ $(document).ready(function () {
   }
 
 
+  // function changeFontSize(increase = true) {
+  //   // Select all elements in the body
+  //   const elements = document.querySelectorAll('body *');
+    
+  //   // Iterate over each element
+  //   elements.forEach(element => {
+  //     // Get the current font size
+  //     const style = window.getComputedStyle(element, null).getPropertyValue('font-size');
+  //     const currentSize = parseFloat(style);
+
+  //     // Increase or decrease the font size
+  //     if (increase) {
+  //       element.style.fontSize = (currentSize + 1) + 'px';// Increase font size by 2px
+  //     } else {
+  //       element.style.fontSize = (currentSize - 1) + 'px'; // Decrease font size by 2px
+  //     }
+  //   });
+  // }
+
+  // document.getElementById('increaseFont').addEventListener('click', () => changeFontSize(true));
+  // document.getElementById('decreaseFont').addEventListener('click', () => changeFontSize(false));
+
+
 
   // function modifyFontSize(MyElement,flag){
 

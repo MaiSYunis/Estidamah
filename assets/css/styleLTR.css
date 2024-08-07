@@ -1879,6 +1879,12 @@ img {
   overflow: hidden;
 }
 
+.footerDGA .FooterLinks .Accessibility li a.click {
+  pointer-events: none;
+  background-color: #ffffff30;
+  opacity: .5;
+}
+
 .footerDGA .FooterLinks .Accessibility li a img {
   width: 24px;
   height: 24px;
