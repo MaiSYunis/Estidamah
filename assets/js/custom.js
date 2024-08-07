@@ -97,3 +97,52 @@ $(document).ready(function () {
   // increaseFontBtn.addEventListener("click", () => changeFontSize(true));
   // decreaseFontBtn.addEventListener("click", () => changeFontSize(false));
 });
+
+
+
+
+/*
+
+  font increase & decrease functions per pixels
+*/
+$(function() {
+
+let count = 0;
+
+
+$(".fontDecrease").click(function(e) {
+ 
+  count -= 1;
+  // console.log(count);
+  if (count == -3) {
+    $(this).toggleClass('click'); 
+  }
+  $(".fontIncrease").removeClass('click')
+  $("*").children().each(function() {
+    var size = parseInt($(this).css("font-size"));
+    size = size - 1 + "px";
+    
+    $(this).css({
+      'font-size': size
+    });
+  });
+  e.stopPropagation();
+});
+$(".fontIncrease").on("click",function(e) {
+  count += 1;
+  // console.log(count);
+  if (count >= 3) {
+    $(this).toggleClass('click'); 
+
+  }
+  $(".fontDecrease").removeClass('click')
+  $("*").children().each(function() {
+    var size = parseInt($(this).css("font-size"));
+    size = size + 1 + "px";
+    $(this).css({
+      'font-size': size
+    });
+  });
+  e.stopPropagation();
+});
+});
