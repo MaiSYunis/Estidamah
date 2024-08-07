@@ -3078,15 +3078,18 @@ img {
   line-height: 28px;
 }
 
+.partnersSec,
 .aimSec {
   background: #f3f4f6;
   padding: 72px 0;
 }
 
+.partnersSec .textAim,
 .aimSec .textAim {
   text-align: center;
 }
 
+.partnersSec .textAim .title,
 .aimSec .textAim .title {
   font-family: var(--display-md-regular-font-family);
   font-weight: 500;
@@ -3098,12 +3101,14 @@ img {
   color: var(--themes-text-text-primary);
 }
 
+.partnersSec .textAim .p20,
 .aimSec .textAim .p20 {
   text-align: center;
   color: #161616;
   margin-bottom: 78px;
 }
 
+.partnersSec .cardElct,
 .aimSec .cardElct {
   margin-bottom: 20px;
   height: 100%;
@@ -3120,7 +3125,12 @@ img {
 
 .customAccordion ul {
   list-style: disc;
-  list-style-position: inside;
+  list-style-position: unset;
+  padding-right: 20px;
+}
+
+.customAccordion ul.num {
+  list-style: decimal;
 }
 
 .customAccordion ul li {
@@ -3182,6 +3192,10 @@ img {
   gap: var(--spacing-notification-notification-gap);
   padding: 14px 24px;
   border-bottom: 2px solid rgba(22, 22, 22, 0.5);
+}
+
+.rateContet .bgRate .rateRight label:before {
+  display: none;
 }
 
 .rateContet .bgRate .rateRight .pRate {
@@ -3402,6 +3416,67 @@ img {
 
 .whiteBg {
   background-color: #e5e7eb;
+}
+
+.partnersCards {
+  padding: 80px 0 60px 0;
+}
+
+.partnersCards .col-md-4 {
+  margin-bottom: 20px;
+}
+
+.partnersCards .PRTCard {
+  padding: var(--spacing-global-spacing-xl);
+  background-color: var(--themes-background-background-card);
+  border-radius: var(--radius-radius-lg);
+  border: 1px solid;
+  border-color: var(--themes-border-border-neutral-primary);
+  height: 100%;
+}
+
+.partnersCards .PRTCard .logo {
+  margin-bottom: 24px;
+  max-height: 170px;
+}
+
+.partnersCards .PRTCard .title {
+  margin-bottom: 8px;
+  font-weight: var(--text-lg-bold-font-weight);
+  color: #1b8354;
+  font-size: var(--text-lg-bold-font-size);
+  line-height: var(--text-lg-bold-line-height);
+  font-family: var(--text-lg-bold-font-family);
+  letter-spacing: var(--text-lg-bold-letter-spacing);
+  font-style: var(--text-lg-bold-font-style);
+}
+
+.partnersCards .PRTCard .p16 {
+  margin-bottom: 24px;
+  font-weight: 400;
+  color: var(--themes-text-text-display);
+  font-size: var(--text-md-medium-font-size);
+  line-height: 24px;
+}
+
+.partnersSec {
+  padding: 50px 0 30px 0;
+}
+
+.partnersSec .textAim p.p20 {
+  padding-top: 20px;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.partnersSec .textAim .ulP {
+  list-style: disc;
+  padding-right: 25px;
+}
+
+.partnersSec .textAim .ulP .p20 {
+  text-align: right;
+  margin-bottom: 5px;
 }
 
 @media (min-width: 1400px) {
