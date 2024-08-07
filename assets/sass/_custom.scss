@@ -1602,7 +1602,7 @@ img {
     margin: 0;
     align-items: center;
     display: flex;
-    margin-top: 22px;
+    margin-top: 30px;
     padding: 0;
     li {
       .home {
@@ -2036,6 +2036,7 @@ img {
     .searchInput {
       height: 100%;
       width: 80%;
+      background: #fff;
       font-weight: var(--text-md-regular-font-weight);
       font-size: var(--text-md-regular-font-size);
       letter-spacing: var(--text-md-regular-letter-spacing);
@@ -2758,4 +2759,7 @@ img {
 }
 .ElectronicSec .electWrapper .cardElct {
   min-height: 200px;
+}
+.whiteBg {
+  background-color: #e5e7eb;
 }

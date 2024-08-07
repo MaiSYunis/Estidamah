@@ -335,6 +335,9 @@
     height: auto;
     margin-bottom: 30px;
   }
+  .newHome .bodyX {
+    height: 400px;
+  }
   .navDGA .row.row-new .col-3-new {
     margin-#{$start-direction}: var(--primitives-spacing-3-12px);
   }
@@ -349,6 +352,8 @@
     position: absolute;
     #{$end-direction}: 25px;
     top: 14px;
+    max-width: unset;
+    min-width: unset;
   }
   div#navbarSupportedContent {
     height: 100vh;
@@ -477,8 +482,8 @@
     margin-bottom: 36px;
   }
   .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu h4.title {
-    margin-bottom: 8px;
-    margin-top: 15px;
+    margin-bottom: 0;
+    margin-top: 0;
   }
   .bannerMenu .contentBanner {
     height: calc(100vh - 160px);
@@ -499,7 +504,13 @@
     }
     .comingSoon .bgWhite > img {
         width: 80px;
+    }
+    .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu h4.title .dropdownTitle {
+        font-size: var( --text-xs-regular-font-size);
     } 
+    .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu {
+        min-height: auto;
+    }
   /* end 992 */
 }
 

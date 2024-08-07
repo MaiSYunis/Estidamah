@@ -25,7 +25,7 @@ $(document).ready(function () {
 
 
 
-  /*
+
   if ($(".rating-star").length) {
     $(".rating-star")
       .on("mouseover", function (e) {
@@ -48,7 +48,7 @@ $(document).ready(function () {
         setCurrentRating();
       });
   }
-*/
+
 
 
   // function modifyFontSize(MyElement,flag){

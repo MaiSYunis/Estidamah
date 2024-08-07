@@ -123,7 +123,7 @@ $(document).ready(function () {
   });
 
   if( $('.ourNumSec').length ) {
-    document.getElementsByTagName('body')[0].style.backgroundColor = '#efefef';
+    $('body').addClass('whiteBg')
     jQuery(function ($) {
       "use strict";
     
