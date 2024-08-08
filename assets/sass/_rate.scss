@@ -13,6 +13,7 @@
   padding-bottom: 62px;
 }
 .sec_head_title {
+  margin-top: 80px;
     font-family: var(--text-lg-regular-font-family);
     font-weight: var(--text-lg-regular-font-weight);
     color: #384250;
@@ -44,7 +45,7 @@
   font-size: 14px;
   border: 1px solid transparent;
   position: absolute;
-  bottom: 20px;
+  top: 80px;
   right: 90px;
   border-color: var(--themes-border-border-neutral-primary);
 } 
@@ -405,10 +406,10 @@ font-size: var(--text-md-medium-font-size);
     font-size: var(--text-sm-regular-font-size);
   }
   .Evaluation2 .alertEvaluation .right .btnSmall {
-    bottom: 15px;
+    top: 105px;
   }
   .Evaluation2 .alertEvaluation .right strong {
     font-size: var(--text-md-medium-font-size);
     margin: 0;
-  }
+  } 
 }
