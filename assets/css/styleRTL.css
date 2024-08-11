@@ -2983,7 +2983,7 @@ img {
 
 .ourNumSec .boxNum .counter {
   font-weight: var(--display-lg-medium-font-weight);
-  color: var(--themes-text-text-primary);
+  color: #1b8354 !important;
   font-size: var(--display-lg-medium-font-size);
   text-align: right;
   letter-spacing: var(--display-lg-medium-letter-spacing);
@@ -4802,6 +4802,9 @@ img {
   .researchSec .title {
     margin-top: -20px;
     padding-bottom: 30px;
+  }
+  .newHome .cardNews .customPagi {
+    bottom: 190px;
   }
   .newHome,
   .ourNumSec,

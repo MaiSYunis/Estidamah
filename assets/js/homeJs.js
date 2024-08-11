@@ -89,7 +89,7 @@ $(document).ready(function () {
     slidesPerView: 3,
     spaceBetween: 24,
     pagination: {
-      el: ".electWrapper .swiper-pagination",
+      el: ".swiper-pagination",
       clickable: true
     },
     breakpoints: {
