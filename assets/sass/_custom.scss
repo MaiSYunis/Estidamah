@@ -437,6 +437,14 @@ img {
 }
 .green-btn {
   display: flex;
+  input[type="submit"] {
+    font-weight: var(--text-md-medium-font-weight);
+    color: var(--themes-text-text-oncolor-primary);
+    font-size: var(--text-md-medium-font-size);
+    letter-spacing: var(--text-md-medium-letter-spacing);
+    line-height: var(--text-md-medium-line-height);
+  }
+  input[type="submit"],
   a {
     display: flex;
     align-items: center;
