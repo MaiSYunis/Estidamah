@@ -318,10 +318,9 @@
     margin: 0;
   }
   .ElectronicSec .right-sec.with-shape.leftWithBgWhite::after {
-    left: 0;
-    right: 42%;
-    top: 64%;
-    transform: rotate(270deg);
+    right: 44%;
+    top: -90px;
+    transform: rotate(90deg);
   }
   .mySwipeOffer2,
   .mySwipeOffer {
@@ -528,6 +527,10 @@
     .betaVersion {
         font-size: 10px; 
     }
+    .breadcrumb .items {
+        margin-top: 15px;
+        line-height: 1.2;
+    }
   /* end 992 */
 }
 
@@ -608,8 +611,15 @@
     .aimSec {
         padding: 45px 0 25px 0;
     }
+    .breadcrumb ul.items a:not(.breadCrumbRoot):not(.active) {
+        margin-left: 20px;
+    }
     .breadcrumb ul.items a {
         font-size: var(--text-xs-regular-font-size);
+    }
+    .breadcrumb ul.items a:not(.breadCrumbRoot):not(.active)::after {
+        left: -18px;
+        top: 1px;
     }
     .customAccordion .accordion-item .accordion-button {
         font-size: var(--text-lg-bold-font-size);
@@ -652,9 +662,14 @@
     font-size: var(--text-sm-regular-font-size);
   }
   /* font 12 */
+  .Evaluation .evaluationBox span, .Evaluation .evaluationBox strong,
   .white-btn a span,
+  .Evaluation .left-sec .last-edit span,
+  .Evaluation2 .alertEvaluation .left p,
   .newHome .cardNews .txtNews .font16,
   .p16,
+  .Evaluation2 .check-button-list-h label,
+  .sec_head_title,
   .green-btn a span {
     font-size: var(--text-xs-regular-font-size);
   }
@@ -675,7 +690,15 @@
   .main-tags1 .tag-card {
     width: calc(100%);
   }
-
+  .Evaluation .rating-star, 
+  .Evaluation .rating-star.active {
+    height: 18px;
+    width: 18px;
+  }
+  .Evaluation2 .alertEvaluation .right .btnSmall#feedback_no {
+    right: 80px;
+    min-width: 40px !important;
+  }
   .services-details .right-sec .btn-contaimer {
     flex-wrap: wrap;
   }
@@ -770,7 +793,7 @@
   }
   .ElectronicSec .right-sec.with-shape.leftWithBgWhite::after {
     right: 37%;
-    top: 69%;
+    top: -90px;
   }
   .white-btn a img {
     width: 18px;

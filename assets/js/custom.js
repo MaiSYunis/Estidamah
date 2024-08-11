@@ -16,10 +16,7 @@ $(document).ready(function () {
     $(".navActions").toggleClass("show");
   });
   
-  $("#contrastId").click(function (e) {
-    e.preventDefault();
-    $("body").toggleClass("contrast");
-  });
+
 
 
 
