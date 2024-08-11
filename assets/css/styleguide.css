@@ -106,12 +106,21 @@
   --text-sm-medium-font-family: "IBM Plex Sans Arabic", Helvetica;
   --text-sm-medium-font-weight: 500;
   --text-sm-medium-font-size: 14px;
+  --text-xl-semibold-font-weight: 600;
+  --display-sm-medium-font-size: 30px;
+  --text-xl-semibold-font-size: 20px;
   --text-sm-medium-letter-spacing: 0px;
   --text-sm-medium-line-height: 20px;
+  --themes-background-background-primary-200: var(--primitives-colors-primary-SA-flag-200);
+  
+  --text-xl-semibold-letter-spacing: 0px;
+  --text-xl-semibold-font-family: "IBM Plex Sans Arabic", Helvetica;
+  --text-xl-semibold-line-height: 30px;
   --text-sm-medium-font-style: normal;
   --text-xs-medium-font-family: "IBM Plex Sans Arabic", Helvetica;
   --text-xs-medium-font-weight: 500;
   --text-xs-medium-font-size: 12px;
+  --text-xl-semibold-font-style: normal;
   --text-xs-medium-letter-spacing: 0px;
   --text-xs-medium-line-height: 18px;
   --text-xs-medium-font-style: normal;
@@ -120,10 +129,12 @@
   --text-sm-bold-font-size: 14px;
   --text-sm-bold-letter-spacing: 0px;
   --text-sm-bold-line-height: 20px;
+  --display-sm-medium-font-weight: 500;
   --text-sm-bold-font-style: normal;
   --shadows-shadow-md: 0px 2px 4px -2px rgba(16, 24, 40, 0.06), 0px 4px 8px -2px rgba(16, 24, 40, 0.1);
   --themes-background-background-body: var(--primitives-colors-neutral-50);
   --themes-text-text-oncolor-primary: var(--primitives-colors-base-white);
+  --themes-text-text-secondary: var(--primitives-colors-secondary-gold-600-primary);
   --themes-link-link-oncolor: var(--primitives-colors-base-white);
   --themes-text-text-default: var(--primitives-colors-base-black);
   --themes-text-text-secondary-paragraph: var(--primitives-colors-neutral-500);
@@ -1138,6 +1149,329 @@ You can apply the theme on any DOM node, not just the `body`
   --spacing-tab-horizontal-tab-md-button-h-padding: var(--primitives-spacing-3-12px);
   --spacing-button-button-menu-gap: var(--primitives-spacing-1-4px);
   --spacing-notification-notification-gap: var(--primitives-spacing-2-8px);
+  --spacing-notification-notification-toast-desktop-h-padding: var(--primitives-spacing-4-16px);
+  --spacing-notification-notification-toast-v-padding: var(--primitives-spacing-3-12px);
+}
+
+
+:root {
+  --text-md-medium-font-family: "IBM Plex Sans Arabic", Helvetica;
+  --text-md-medium-font-weight: 500;
+  --text-md-medium-font-size: 16px;
+  --text-md-medium-letter-spacing: 0px;
+  --text-md-medium-line-height: 24px;
+  --text-md-medium-font-style: normal;
+  --text-sm-regular-font-family: "IBM Plex Sans Arabic", Helvetica;
+  --text-sm-regular-font-weight: 400;
+  --text-sm-regular-font-size: 14px;
+  --text-sm-regular-letter-spacing: 0px;
+  --text-sm-regular-line-height: 20px;
+  --text-sm-regular-font-style: normal;
+  --text-sm-regular-underlined-font-family: "IBM Plex Sans Arabic", Helvetica;
+  --text-sm-regular-underlined-font-weight: 400;
+  --text-sm-regular-underlined-font-size: 14px;
+  --text-sm-regular-underlined-letter-spacing: 0px;
+  --text-sm-regular-underlined-line-height: 20px;
+  --text-sm-regular-underlined-font-style: normal;
+  --text-sm-semibold-font-family: "IBM Plex Sans Arabic", Helvetica;
+  --text-sm-semibold-font-weight: 600;
+  --text-sm-semibold-font-size: 14px;
+  --text-sm-semibold-letter-spacing: 0px;
+  --text-sm-semibold-line-height: 20px;
+  --text-sm-semibold-font-style: normal;
+  --text-xs-regular-font-family: "IBM Plex Sans Arabic", Helvetica;
+  --text-xs-regular-font-weight: 400;
+  --text-xs-regular-font-size: 12px;
+  --text-xs-regular-letter-spacing: 0px;
+  --text-xs-regular-line-height: normal;
+  --text-xs-regular-font-style: normal;
+  --text-md-semibold-font-family: "IBM Plex Sans Arabic", Helvetica;
+  --text-md-semibold-font-weight: 600;
+  --text-md-semibold-font-size: 16px;
+  --text-md-semibold-letter-spacing: 0px;
+  --text-md-semibold-line-height: 24px;
+  --text-md-semibold-font-style: normal;
+  --text-sm-medium-font-family: "IBM Plex Sans Arabic", Helvetica;
+  --text-sm-medium-font-weight: 500;
+  --text-sm-medium-font-size: 14px;
+  --text-sm-medium-letter-spacing: 0px;
+  --text-sm-medium-line-height: 20px;
+  --text-sm-medium-font-style: normal;
+  --text-md-regular-font-family: "IBM Plex Sans Arabic", Helvetica;
+  --text-md-regular-font-weight: 400;
+  --text-md-regular-font-size: 16px;
+  --text-md-regular-letter-spacing: 0px;
+  --text-md-regular-line-height: 24px;
+  --text-md-regular-font-style: normal;
+  --text-md-bold-font-family: "IBM Plex Sans Arabic", Helvetica;
+  --text-md-bold-font-weight: 700;
+  --text-md-bold-font-size: 16px;
+  --text-md-bold-letter-spacing: 0px;
+  --text-md-bold-line-height: 24px;
+  --text-md-bold-font-style: normal;
+  --text-lg-bold-font-family: "IBM Plex Sans Arabic", Helvetica;
+  --text-lg-bold-font-weight: 700;
+  --text-lg-bold-font-size: 18px;
+  --text-lg-bold-letter-spacing: 0px;
+  --text-lg-bold-line-height: 28px;
+  --text-lg-bold-font-style: normal;
+  --display-md-medium-font-family: "IBM Plex Sans Arabic", Helvetica;
+  --display-md-medium-font-weight: 500;
+  --display-md-medium-font-size: 36px;
+  --display-md-medium-letter-spacing: -0.72px;
+  --display-md-medium-line-height: 44px;
+  --display-md-medium-font-style: normal;
+  --display-xs-medium-font-family: "IBM Plex Sans Arabic", Helvetica;
+  --display-xs-medium-font-weight: 500;
+  --display-xs-medium-font-size: 24px;
+  --display-xs-medium-letter-spacing: 0px;
+  --display-xs-medium-line-height: 32px;
+  --display-xs-medium-font-style: normal;
+  --text-lg-regular-font-family: "IBM Plex Sans Arabic", Helvetica;
+  --text-lg-regular-font-weight: 400;
+  --text-lg-regular-font-size: 18px;
+  --text-lg-regular-letter-spacing: 0px;
+  --text-lg-regular-line-height: 28px;
+  --text-lg-regular-font-style: normal;
+  --text-xl-regular-font-family: "IBM Plex Sans Arabic", Helvetica;
+  --text-xl-regular-font-weight: 400;
+  --text-xl-regular-font-size: 20px;
+  --text-xl-regular-letter-spacing: 0px;
+  --text-xl-regular-line-height: 30px;
+  --text-xl-regular-font-style: normal;
+  --display-lg-medium-font-family: "IBM Plex Sans Arabic", Helvetica;
+  --display-lg-medium-font-weight: 500;
+  --display-lg-medium-font-size: 48px;
+  --display-lg-medium-letter-spacing: -0.96px;
+  --display-lg-medium-line-height: 60px;
+  --display-lg-medium-font-style: normal;
+  --text-md-regular-underlined-font-family: "IBM Plex Sans Arabic", Helvetica;
+  --text-md-regular-underlined-font-weight: 400;
+  --text-md-regular-underlined-font-size: 16px;
+  --text-md-regular-underlined-letter-spacing: 0px;
+  --text-md-regular-underlined-line-height: 24px;
+  --text-md-regular-underlined-font-style: normal;
+  --text-xs-medium-font-family: "IBM Plex Sans Arabic", Helvetica;
+  --text-xs-medium-font-weight: 500;
+  --text-xs-medium-font-size: 12px;
+  --text-xs-medium-letter-spacing: 0px;
+  --text-xs-medium-line-height: 18px;
+  --text-xs-medium-font-style: normal;
+  --shadows-shadow-lg: 0px 4px 6px -2px rgba(16, 24, 40, 0.03), 0px 12px 16px -4px rgba(16, 24, 40, 0.08);
+  --themes-background-background-white: var(--primitives-colors-base-white);
+  --themes-text-text-display: var(--primitives-colors-neutral-800);
+  --themes-text-text-default: var(--primitives-colors-base-black);
+  --themes-link-link-neutral: var(--primitives-colors-neutral-700);
+  --themes-text-text-primary-paragraph: var(--primitives-colors-neutral-700);
+  --themes-text-text-primary: var(--primitives-colors-primary-SA-flag-600-primary);
+  --themes-text-text-default-duplicate: var(--primitives-colors-base-black-duplicate);
+  --themes-text-text-oncolor-primary-duplicate: var(--primitives-colors-base-white);
+  --themes-link-link-oncolor-duplicate: var(--primitives-colors-base-white);
+  --themes-background-background-black: var(--primitives-colors-base-black);
+  --themes-background-background-primary-50: var(--primitives-colors-primary-SA-flag-50);
+  --themes-background-background-primary-50-duplicate: var(--primitives-colors-primary-SA-flag-50-duplicate);
+  --themes-background-background-nav-header: var(--primitives-colors-primary-SA-flag-800);
+  --themes-background-background-neutral-50: var(--primitives-colors-neutral-50);
+  --themes-background-background-neutral-200: var(--primitives-colors-neutral-200);
+  --themes-border-border-oncolor-transparent-30: var(--primitives-colors-alpha-alpha-white-30);
+  --themes-background-background-primary-400: var(--primitives-colors-primary-SA-flag-400-duplicate);
+  --themes-border-border-neutral-primary: var(--primitives-colors-neutral-300-duplicate);
+  --themes-button-button-background-primary-default: var(--primitives-colors-primary-SA-flag-600-primary-duplicate);
+  --themes-background-background-SA-flag: var(--primitives-colors-green-900);
+  --themes-background-background-neutral-400: var(--primitives-colors-neutral-400);
+  --themes-button-button-background-neutral-hovered: var(--primitives-colors-neutral-100);
+  --themes-global-text-default-disabled: var(--primitives-colors-neutral-400);
+  --themes-link-link-neutral-hovered: var(--primitives-colors-neutral-500);
+  --themes-link-link-oncolor-hovered: var(--primitives-colors-alpha-alpha-white-80);
+  --themes-icon-bg-icon-brand-light: var(--primitives-colors-primary-SA-flag-50-duplicate);
+  --themes-alpha-alpha-primary-10: rgba(27, 131, 84, 0.1);
+  --themes-border-border-white-40: var(--themes-alpha-alpha-white-40);
+  --themes-button-button-background-transparent-hovered: var(--themes-alpha-alpha-white-20);
+  --themes-button-button-background-neutral-default: var(--primitives-colors-neutral-100);
+  --themes-alpha-alpha-white-40: var(--primitives-colors-alpha-alpha-white-40);
+  --themes-alpha-alpha-white-20: var(--primitives-colors-alpha-alpha-white-20);
+  --themes-button-button-background-primary-hovered: var(--primitives-colors-primary-SA-flag-700);
+  --themes-border-border-neutral-secondary: var(--primitives-colors-neutral-200);
+  --themes-tag-tag-text-neutral: var(--primitives-colors-neutral-800);
+  --themes-tag-tag-background-neutral-light: var(--primitives-colors-neutral-50);
+  --themes-text-text-primary-duplicate: var(--primitives-colors-primary-SA-flag-600-primary-duplicate);
+  --themes-border-border-primary: var(--primitives-colors-primary-SA-flag-600-primary-duplicate);
+  --themes-text-text-secondary-paragraph: var(--primitives-colors-neutral-500);
+  --primitives-colors-base-white: rgba(255, 255, 255, 1);
+  --primitives-colors-base-white-duplicate: rgba(255, 255, 255, 1);
+  --primitives-colors-neutral-800: rgba(31, 42, 55, 1);
+  --primitives-colors-base-black: rgba(22, 22, 22, 1);
+  --primitives-colors-neutral-700: rgba(56, 66, 80, 1);
+  --primitives-colors-primary-SA-flag-600-primary: rgba(27, 131, 84, 1);
+  --primitives-colors-base-black-duplicate: rgba(22, 22, 22, 1);
+  --primitives-spacing-2-8px: 8px;
+  --primitives-colors-primary-SA-flag-50: rgba(243, 252, 246, 1);
+  --primitives-colors-primary-SA-flag-50-duplicate: rgba(243, 252, 246, 1);
+  --primitives-colors-primary-SA-flag-800: rgba(20, 87, 58, 1);
+  --primitives-spacing-1-4px: 4px;
+  --primitives-colors-neutral-950: rgba(13, 18, 28, 1);
+  --primitives-spacing-4-16px: 16px;
+  --primitives-spacing-0-0px: 0px;
+  --primitives-spacing-3-12px: 12px;
+  --primitives-spacing-2-8px-duplicate: 8px;
+  --primitives-colors-neutral-50: rgba(249, 250, 251, 1);
+  --primitives-colors-neutral-200: rgba(229, 231, 235, 1);
+  --primitives-colors-neutral-100: rgba(243, 244, 246, 1);
+  --primitives-colors-primary-SA-flag-400: rgba(84, 192, 138, 1);
+  --primitives-colors-alpha-alpha-600-primary-10: rgba(27, 131, 84, 0.1);
+  --primitives-radius-radius-4: 4px;
+  --primitives-colors-alpha-alpha-white-30: rgba(255, 255, 255, 0.3);
+  --primitives-colors-primary-SA-flag-400-duplicate: rgba(84, 192, 138, 1);
+  --primitives-colors-alpha-alpha-600-primary-10-duplicate: rgba(27, 131, 84, 0.1);
+  --primitives-colors-neutral-300-duplicate: rgba(210, 214, 219, 1);
+  --primitives-colors-neutral-600: rgba(77, 87, 97, 1);
+  --primitives-colors-neutral-900: rgba(17, 25, 39, 1);
+  --primitives-colors-primary-SA-flag-600-primary-duplicate: rgba(27, 131, 84, 1);
+  --primitives-colors-neutral-500: rgba(108, 115, 127, 1);
+  --primitives-spacing-6-24px-duplicate: 24px;
+  --primitives-spacing-10-40px: 40px;
+  --primitives-radius-radius-2: 2px;
+  --primitives-colors-neutral-950-duplicate: rgba(13, 18, 28, 1);
+  --primitives-colors-green-900: rgba(7, 77, 49, 1);
+  --primitives-colors-neutral-400: rgba(157, 164, 174, 1);
+  --primitives-colors-alpha-alpha-white-80: rgba(255, 255, 255, 0.8);
+  --primitives-colors-alpha-alpha-white-40: rgba(255, 255, 255, 0.4);
+  --primitives-colors-alpha-alpha-white-20: rgba(255, 255, 255, 0.2);
+  --primitives-colors-primary-SA-flag-700: rgba(22, 106, 69, 1);
+  --primitives-colors-alpha-alpha-black-40: rgba(22, 22, 22, 0.4);
+  --primitives-colors-alpha-alpha-black-20: rgba(22, 22, 22, 0.2);
+  --spacing-global-spacing-md: var(--primitives-spacing-2-8px);
+  --spacing-button-buttons-lg-gap: var(--primitives-spacing-1-4px);
+  --spacing-button-buttons-md-gap: var(--primitives-spacing-1-4px);
+  --spacing-global-spacing-xs: var(--primitives-spacing-1-4px);
+  --spacing-button-buttons-lg-padding: var(--primitives-spacing-4-16px);
+  --spacing-global-spacing-none: var(--primitives-spacing-0-0px);
+  --spacing-button-buttons-md-padding: var(--primitives-spacing-3-12px);
+  --spacing-link-link-sm-gap: var(--primitives-spacing-1-4px);
+  --spacing-link-link-md-gap: var(--primitives-spacing-2-8px);
+  --spacing-global-spacing-lg: var(--primitives-spacing-3-12px);
+  --spacing-global-spacing-xl: var(--primitives-spacing-4-16px);
+  --spacing-global-spacing-3xl: var(--primitives-spacing-6-24px-duplicate);
+  --spacing-card-card-lg-gap: var(--primitives-spacing-6-24px-duplicate);
+  --spacing-button-button-menu-gap: var(--primitives-spacing-2-8px);
+  --spacing-notification-notification-gap: var(--primitives-spacing-4-16px);
+  --spacing-global-spacing-5xl: var(--primitives-spacing-10-40px);
+  --spacing-notification-notification-alert-h-padding: var(--primitives-spacing-6-24px-duplicate);
+  --spacing-notification-notification-alert-v-padding: var(--primitives-spacing-2-8px);
+  --spacing-notification-notification-toast-desktop-h-padding: var(--primitives-spacing-6-24px-duplicate);
+  --spacing-notification-notification-toast-v-padding: var(--primitives-spacing-4-16px);
+  --radius-radius-full: 9999px;
+  --radius-radius-full-duplicate: 9999px;
+  --radius-radius-sm: 4px;
+  --radius-radius-sm-duplicate: 4px;
+  --radius-radius-lg: 16px;
+  --radius-radius-md: 8px;
+  --primitives-colors-neutral-300: rgba(210, 214, 219, 1);
+  --primitives-spacing-1-4px-duplicate: 4px;
+  --primitives-spacing-4-16px-duplicate: 16px;
+  --primitives-spacing-6-24px: 24px;
+  --primitives-spacing-8-32px: 32px;
+  --primitives-spacing-10-40px-duplicate: 40px;
+  --spacing-spacing-xs-duplicate: var(--primitives-spacing-1-4px-duplicate);
+  --spacing-spacing-xl-duplicate: var(--primitives-spacing-4-16px-duplicate);
+  --spacing-spacing-md-duplicate: var(--primitives-spacing-2-8px-duplicate);
+  --spacing-spacing-3xl: var(--primitives-spacing-6-24px);
+  --spacing-spacing-4xl: var(--primitives-spacing-8-32px);
+  --spacing-spacing-5xl: var(--primitives-spacing-10-40px-duplicate);
+  --radius-radius-radius-sm: var(--primitives-radius-radius-4);
+  --radius-radius-radius-xs: var(--primitives-radius-radius-2);
+}
+
+/*
+
+To enable a theme in your HTML, simply add one of the following data attributes to an HTML element, like so:
+
+<body data-themes-mode="light">
+    <!-- the rest of your content -->
+</body>
+
+You can apply the theme on any DOM node, not just the `body`
+
+*/
+
+[data-themes-mode="light"] {
+  --themes-background-background-white: var(--primitives-colors-base-white);
+  --themes-text-text-display: var(--primitives-colors-neutral-800);
+  --themes-link-link-neutral: var(--primitives-colors-neutral-700);
+  --themes-text-text-primary-paragraph: var(--primitives-colors-neutral-700);
+  --themes-text-text-primary: var(--primitives-colors-primary-SA-flag-600-primary);
+  --themes-text-text-default-duplicate: var(--primitives-colors-base-black-duplicate);
+  --themes-background-background-primary-50-duplicate: var(--primitives-colors-primary-SA-flag-50-duplicate);
+  --themes-background-background-neutral-50: var(--primitives-colors-neutral-50);
+  --themes-background-background-neutral-200: var(--primitives-colors-neutral-200);
+  --themes-border-border-neutral-primary: var(--primitives-colors-neutral-300-duplicate);
+  --themes-background-background-SA-flag: var(--primitives-colors-green-900);
+  --themes-button-button-background-neutral-hovered: var(--primitives-colors-neutral-100);
+  --themes-link-link-neutral-hovered: var(--primitives-colors-neutral-500);
+  --themes-icon-bg-icon-brand-light: var(--primitives-colors-primary-SA-flag-50-duplicate);
+  --themes-alpha-alpha-primary-10: rgba(27, 131, 84, 0.1);
+  --themes-button-button-background-neutral-default: var(--primitives-colors-neutral-100);
+  --themes-alpha-alpha-white-40: var(--primitives-colors-alpha-alpha-white-40);
+  --themes-alpha-alpha-white-20: var(--primitives-colors-alpha-alpha-white-20);
+  --themes-border-border-neutral-secondary: var(--primitives-colors-neutral-200);
+  --themes-tag-tag-text-neutral: var(--primitives-colors-neutral-800);
+  --themes-tag-tag-background-neutral-light: var(--primitives-colors-neutral-50);
+  --themes-text-text-primary-duplicate: var(--primitives-colors-primary-SA-flag-600-primary-duplicate);
+  --themes-text-text-secondary-paragraph: var(--primitives-colors-neutral-500);
+}
+
+[data-themes-mode="dark"] {
+  --themes-background-background-white: var(--primitives-colors-neutral-950);
+  --themes-text-text-display: var(--primitives-colors-neutral-50);
+  --themes-link-link-neutral: var(--primitives-colors-neutral-200);
+  --themes-text-text-primary-paragraph: var(--primitives-colors-neutral-100);
+  --themes-text-text-primary: var(--primitives-colors-primary-SA-flag-400);
+  --themes-text-text-default-duplicate: var(--primitives-colors-base-white);
+  --themes-background-background-primary-50-duplicate: var(--primitives-colors-alpha-alpha-600-primary-10-duplicate);
+  --themes-background-background-neutral-50: var(--primitives-colors-neutral-900);
+  --themes-background-background-neutral-200: var(--primitives-colors-neutral-600);
+  --themes-border-border-neutral-primary: var(--primitives-colors-neutral-500);
+  --themes-background-background-SA-flag: var(--primitives-colors-primary-SA-flag-600-primary-duplicate);
+  --themes-button-button-background-neutral-hovered: var(--primitives-colors-neutral-700);
+  --themes-link-link-neutral-hovered: var(--primitives-colors-neutral-400);
+  --themes-icon-bg-icon-brand-light: var(--themes-alpha-alpha-primary-10);
+  --themes-alpha-alpha-primary-10: rgba(22, 106, 69, 0.1);
+  --themes-button-button-background-neutral-default: var(--primitives-colors-neutral-800);
+  --themes-alpha-alpha-white-40: var(--primitives-colors-alpha-alpha-black-40);
+  --themes-alpha-alpha-white-20: var(--primitives-colors-alpha-alpha-black-20);
+  --themes-border-border-neutral-secondary: var(--primitives-colors-neutral-700);
+  --themes-tag-tag-text-neutral: var(--primitives-colors-neutral-100);
+  --themes-tag-tag-background-neutral-light: var(--primitives-colors-neutral-800);
+  --themes-text-text-primary-duplicate: var(--primitives-colors-primary-SA-flag-400-duplicate);
+  --themes-text-text-secondary-paragraph: var(--primitives-colors-neutral-200);
+}
+
+[data-spacing-mode="desktop"] {
+  --spacing-link-link-md-gap: var(--primitives-spacing-2-8px);
+  --spacing-card-card-lg-gap: var(--primitives-spacing-6-24px-duplicate);
+  --spacing-button-button-menu-gap: var(--primitives-spacing-2-8px);
+  --spacing-notification-notification-gap: var(--primitives-spacing-4-16px);
+  --spacing-notification-notification-alert-h-padding: var(--primitives-spacing-6-24px-duplicate);
+  --spacing-notification-notification-toast-desktop-h-padding: var(--primitives-spacing-6-24px-duplicate);
+  --spacing-notification-notification-toast-v-padding: var(--primitives-spacing-4-16px);
+}
+
+[data-spacing-mode="tablet"] {
+  --spacing-link-link-md-gap: var(--primitives-spacing-2-8px);
+  --spacing-card-card-lg-gap: var(--primitives-spacing-6-24px-duplicate);
+  --spacing-button-button-menu-gap: var(--primitives-spacing-2-8px);
+  --spacing-notification-notification-gap: var(--primitives-spacing-4-16px);
+  --spacing-notification-notification-alert-h-padding: var(--primitives-spacing-6-24px-duplicate);
+  --spacing-notification-notification-toast-desktop-h-padding: var(--primitives-spacing-6-24px-duplicate);
+  --spacing-notification-notification-toast-v-padding: var(--primitives-spacing-4-16px);
+}
+
+[data-spacing-mode="mobile"] {
+  --spacing-link-link-md-gap: var(--primitives-spacing-1-4px);
+  --spacing-card-card-lg-gap: var(--primitives-spacing-4-16px);
+  --spacing-button-button-menu-gap: var(--primitives-spacing-1-4px);
+  --spacing-notification-notification-gap: var(--primitives-spacing-2-8px);
+  --spacing-notification-notification-alert-h-padding: var(--primitives-spacing-4-16px);
   --spacing-notification-notification-toast-desktop-h-padding: var(--primitives-spacing-4-16px);
   --spacing-notification-notification-toast-v-padding: var(--primitives-spacing-3-12px);
 }

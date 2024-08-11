@@ -26,7 +26,6 @@
   <body>
     <!-- AO start menu with banner -->
     <section class="menuWithBanner">
-        <a href="#!" class="toggleOptions"><img src="../assets/images/shared/navBarDots.svg" alt=""></a>
       <div class="navDGA">
         <div class="container">
           <div class="row row-new">
@@ -688,12 +687,12 @@
                 </li>
                 <li>
                   <a href="#!" class="home">
-                   عن استدامة 
+                    الخدمات الإلكترونية
                   </a>
                 </li>
                 <li>
                     <span>
-                     مجلس الإدارة   
+                        طلب زيارة
                     </span>
                 </li>
               </ul>
@@ -708,7 +707,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <h1 class="titleBnr">
-                       مجلس الإدارة
+                        طلب زيارة
                     </h1>
                 </div>  
                 <div class="col-md-6">
@@ -723,247 +722,104 @@
         </div>
       </section>
       <!-- end banner -->
-
-      <section class="fullWidthMain">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="rightCardMn with-shape ">
-                        <div class="imgPres">
-                            <img src="../assets/images/bordMemeber/pres1.png" alt="">
-                        </div>
-                        <div class="txtPrs">
-                            <h3 class="wordPres">كلمة السيد</h3>
-                            <h2 class="role">رئيس مجلس الإدارة</h2>
-                            <p class="p24">معالي المهندس عبد الرحمن الفضلي</p>
+        <section class="forms">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="inputText required err ">
+                            <label for="input1" class="form-label label">اسم الجهة</label>
+                            <input type="text" class="form-control" id="input1" placeholder="يُرجى كتابة اسم الهيئة">
+                            <span class="errMsg">يُرجى اختيار اليوم والشهر والسنة</span>
                         </div>
                     </div>
-                </div>
-                <!-- end col 4 -->
-                <div class="col-md-8">
-                    <div class="hisWord">
-                        <p class="p20">
-                            أولت المملكة العربية السعودية القطاع الزراعي اهتماماً كبيراً حتى أصبح من القطاعات التنموية الرائدة في المملكة. وبدعم من قيادة خادم الحرمين الشريفين وصاحب السمو الملكي ولي العهد - حفظهما الله - حقق هذا القطاع قفزات تنموية كبيرة ساهمت في تحقيق الأمن الغذائي في المملكة لعدد من السلع الاستراتيجية. وقد ركزت استراتيجيات البيئة والمياه والزراعة والأمن الغذائي بشكل خاص على قطاع مستدام لحماية البيئة، وتنمية الموارد المائية، وتوفير إمدادات غذائية دائمة وآمنة وخدمات عالية الجودة من شأنها أن تساعد في تحقيق الأهداف الاجتماعية والاقتصادية. التنمية الاقتصادية، ركائز أساسية لرؤية المملكة 2030.
-                            <br>
-                            <br>
-
-استدامة هو مركز متخصص في البحوث الزراعية. وتتمثل أهدافها في جلب التكنولوجيا للزراعة المستدامة وتكييفها - بما في ذلك أحدث التقنيات في هذا المجال، وتطوير تقنيات محلية قابلة للاستثمار وقابلة للتسويق تجاريًا والتي تركز بشكل خاص على العائد عالي الجودة، والإنتاج الفعال، وكفاءة استخدام المياه، ودعم الإعداد للصناعة الوطنية المتخصصة في هذا المجال، بالإضافة إلى إنشاء قاعدة بيانات إلكترونية حول الزراعة المستدامة في المملكة.
-                            <br>
-                            <br>
-
-وبهذه المناسبة، يسعدني أن أتقدم بعميق الشكر والتقدير لقيادتنا الحكيمة على دعمها وتجهيزها لإنجاح هذه المبادرة، بما في ذلك الموارد البشرية والمالية المطلوبة، لتعزيز دور القطاع في التنمية الاجتماعية والاقتصادية. . كما أتقدم بالشكر الجزيل لجميع المنظمات التي شاركت في إنشاء هذا المركز؛ متمنيا لموظفيها كل النجاح.
-                            <br>
-                            <br>
-                            والله ولي التوفيق.
-               
-                        </p>
+                    <!-- end field  -->
+                    <div class="col-md-4">
+                        <div class="inputText select required">
+                            <label for="select" class="form-label label">مسئول الجهة</label>
+                            <select name="select" id="cars">
+                              <option value="0">يرجى اختيار  المسئول</option>
+                              <option value="0">يرجى اختيار  المسئول</option>
+                              <option value="0">يرجى اختيار  المسئول</option>
+                              </select>
+                          </div>
                     </div>
+                    <!-- end field  -->
+                    <div class="col-md-4">
+                        <div class="inputText inputNumber required ">
+                            <label for="input3" class="form-label label">رقم الجوال</label>
+                                <input type="number" class="form-control" id="input3" placeholder="يُرجى كتابةرقم الجوال">
+                        </div>
+                    </div>
+                    <!-- end field  -->
+                    <div class="col-md-4">
+                        <div class="inputText inputDate required">
+                            <label for="startDate1" class="form-label label">تاريخ بدء الزيارة</label>
+                            <input id="startDate1" class="form-control" type="date" />
+                        </div>
+                    </div>
+                    <!-- end field  -->
+                    <div class="col-md-4">
+                        <div class="inputText inputDate required">
+                            <label for="startDate" class="form-label label">تاريخ نهاية الزيارة</label>
+                            <input id="startDate" class="form-control" type="date" />
+                        </div>
+                    </div>
+                    <div class="col-md-12 rowToClone">
+                        <div class="row rowRemove">
+                            <div class="col-md-4">
+                                <div class="inputText required  ">
+                                    <label for="input1" class="form-label label"> اسم الحضور</label>
+                                    <input type="text" class="form-control" id="input1" placeholder="يُرجى كتابة اسم الهيئة">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="inputText required  ">
+                                    <label for="input1" class="form-label label"> المنصب</label>
+                                    <input type="text" class="form-control" id="input1" placeholder="يُرجى كتابة اسم الهيئة">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="addRow">
+                                    <div class="green-btn">
+                                        <a href="#" class="" id="addingRow">
+                                          <img src="../assets/images/services/plus.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <a href="#" class="nextBtn" id="removeRow">
+                                        <img src="../assets/images/services/minus.svg" alt="">
+                                      </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end field  -->
+                    <div class="col-md-6">
+                        <div class="inputText textarea required">
+                            <label for="textarea1" class="form-label label"> نشاط الجهة  </label>
+                            <textarea class="form-control" id="textarea1" rows="3" placeholder="النص المُدخل"></textarea>
+                        </div>
+                    </div>
+                    <!-- end field  -->
+                    <div class="col-md-6">
+                        <div class="inputText textarea required">
+                            <label for="textarea2" class="form-label label"> الهدف من الزيارة</label>
+                            <textarea class="form-control" id="textarea2" rows="3" placeholder="النص المُدخل"></textarea>
+                        </div>
+                    </div>
+                    <!-- end field  -->
+                    <div class="col-md-12">
+                        <div class="green-btn leftSide">
+                            <a href="#" class="">
+                              <span> حفظ </span>
+                            </a>
+                          </div>
+                    </div>
+                    <!-- end field  -->
                 </div>
-                <!-- end col 8 -->
+
+
             </div>
-        </div>
-      </section>
-
-      <section class="borderMemeberCards">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <a href="#" class="membCard">
-                        <div class="presImg">
-                            <img src="../assets/images/bordMemeber/pres5.png" alt="">
-                        </div>
-                        <div class="memTxt">
-                            <h2 class="namePres">م. عبد الرحمن الفضلي</h2>
-                            <h4 class="rolePres">رئيس مجلس الإدارة</h4>
-                        </div>
-                    </a>
-          
-                </div>
-                <!-- end card -->
-                <div class="col-md-3">
-                    <a href="#" class="membCard">
-                        <div class="presImg">
-                            <img src="../assets/images/bordMemeber/pres4.png" alt="">
-                        </div>
-                        <div class="memTxt">
-                            <h2 class="namePres">م. عبدالرحمن بن أحمد شمس الدين</h2>
-                            <h4 class="rolePres">عضوًا</h4>
-                        </div>
-                    </a>
-                </div>
-                <!-- end card -->
-                <div class="col-md-3">
-                    <a href="#" class="membCard">
-                        <div class="presImg">
-                            <img src="../assets/images/bordMemeber/pres3.png" alt="">
-                        </div>
-                        <div class="memTxt">
-                            <h2 class="namePres">م. أحمد صالح عيادة الخمشي</h2>
-                            <h4 class="rolePres">عضوًا</h4>
-                        </div>
-                    </a>
-                </div>
-                <!-- end card -->
-                <div class="col-md-3">
-                    <a href="#" class="membCard">
-                        <div class="presImg">
-                            <img src="../assets/images/bordMemeber/pres2.png" alt="">
-                        </div>
-                        <div class="memTxt">
-                            <h2 class="namePres">أ. فرح إسماعيل</h2>
-                            <h4 class="rolePres">عضوًا</h4>
-                        </div>
-                    </a>
-                </div>
-                <!-- end card -->
-                <div class="col-md-3">
-                    <a href="#" class="membCard">
-                        <div class="presImg">
-                            <img src="../assets/images/bordMemeber/pres9.png" alt="">
-                        </div>
-                        <div class="memTxt">
-                            <h2 class="namePres">م. سليمان عبدالرحمن الطريف</h2>
-                            <h4 class="rolePres">رئيس مجلس الإدارة</h4>
-                        </div>
-                    </a>
-                </div>
-                <!-- end card -->
-                <div class="col-md-3">
-                    <a href="#" class="membCard">
-                        <div class="presImg">
-                            <img src="../assets/images/bordMemeber/pres8.png" alt="">
-                        </div>
-                        <div class="memTxt">
-                            <h2 class="namePres">د. أحمد بن سعود السقوفي</h2>
-                            <h4 class="rolePres">عضوًا</h4>
-                        </div>
-                    </a>
-                </div>
-                <!-- end card -->
-                <div class="col-md-3">
-                    <a href="#" class="membCard">
-                        <div class="presImg">
-                            <img src="../assets/images/bordMemeber/pres7.png" alt="">
-                        </div>
-                        <div class="memTxt">
-                            <h2 class="namePres">أ.د. عبد الله بن سليمان السحيم</h2>
-                            <h4 class="rolePres">عضوًا</h4>
-                        </div>
-                    </a>
-                </div>
-                <!-- end card -->
-                <div class="col-md-3">
-                    <a href="#" class="membCard">
-                        <div class="presImg">
-                            <img src="../assets/images/bordMemeber/pres6.png" alt="">
-                        </div>
-                        <div class="memTxt">
-                            <h2 class="namePres">أ.د. عبد الرحمن عبد الله الصقير</h2>
-                            <h4 class="rolePres">عضوًا</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a href="#" class="membCard">
-                        <div class="presImg">
-                            <img src="../assets/images/bordMemeber/pres13.png" alt="">
-                        </div>
-                        <div class="memTxt">
-                            <h2 class="namePres">أ. علي بن سعد اليابس</h2>
-                            <h4 class="rolePres">رئيس مجلس الإدارة</h4>
-                        </div>
-                    </a>
-                </div>
-                <!-- end card -->
-                <div class="col-md-3">
-                    <a href="#" class="membCard">
-                        <div class="presImg">
-                            <img src="../assets/images/bordMemeber/pres12.png" alt="">
-                        </div>
-                        <div class="memTxt">
-                            <h2 class="namePres">د. حاتم الدخيل</h2>
-                            <h4 class="rolePres">عضوًا</h4>
-                        </div>
-                    </a>
-                </div>
-                <!-- end card -->
-                <div class="col-md-3">
-                    <a href="#" class="membCard">
-                        <div class="presImg">
-                            <img src="../assets/images/bordMemeber/pres11.png" alt="">
-                        </div>
-                        <div class="memTxt">
-                            <h2 class="namePres">د. عبدالعزيز بن مالك المالك</h2>
-                            <h4 class="rolePres">عضوًا</h4>
-                        </div>
-                    </a>
-                </div>
-                <!-- end card -->
-                <div class="col-md-3">
-                    <a href="#" class="membCard">
-                        <div class="presImg">
-                            <img src="../assets/images/bordMemeber/pres10.png" alt="">
-                        </div>
-                        <div class="memTxt">
-                            <h2 class="namePres">د. إبراهيم بن عبد العزيز التركي</h2>
-                            <h4 class="rolePres">عضوًا</h4>
-                        </div>
-                    </a>
-                </div>
-                <!-- end card -->
-            </div>
-        </div>
-      </section>
-
-
-
-      <section class="rateContet">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="bgRate">
-                        <div class="rateRight">
-                            <p class="pRate">
-                                تقييم محتوى الصفحة
-                            </p>
-                            <div class="rate">
-                                <input type="radio" id="star5" name="rate" value="5" />
-                                <label for="star5" title="text"></label>
-                                <input type="radio" id="star4" name="rate" value="4" />
-                                <label for="star4" title="text"></label>
-                                <input type="radio" id="star3" name="rate" value="3" />
-                                <label for="star3" title="text"></label>
-                                <input type="radio" id="star2" name="rate" value="2" />
-                                <label for="star2" title="text"></label>
-                                <input type="radio" id="star1" name="rate" value="1" />
-                                <label for="star1" title="text"></label>
-                              </div>
-                        </div>
-                        <div class="rateLeft">
-                            <p class="dateRate">
-                                تاريخ اخر تصويت 15 يوليو 2024
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="rateBtns">
-                        <p class="pWarp">
-                             <span class="bg bgLogo">
-                                <img src="../assets/images/shared/rateQes.svg" alt="">
-                             </span>
-                             <span class="p16">هل استفدت من المعلومات المقدمة في هذه الصفحة؟</span>
-                        </p>
-                        <div class="actions">
-                            <a class="yes" href="#!">نعم</a>
-                            <a class="no" href="#!">لا</a>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-      </section>
+        </section>
 
     <!--  Ao  end content  -->
 
@@ -1097,7 +953,7 @@
                 <h4 class="">أدوات الاتاحة والوصول</h4>
                 <ul class="Accessibility">
                   <li>
-                    <a href="#!" class="fontIncrease">
+                    <a href="#!">
                       <img
                         src="../assets/images/shared/zoom-in-area.svg"
                         alt=""
@@ -1105,7 +961,7 @@
                     </a>
                   </li>
                   <li>
-                    <a href="#!" class="fontDecrease">
+                    <a href="#!">
                       <img
                         src="../assets/images/shared/zoom-out-area.svg"
                         alt=""
@@ -1174,6 +1030,25 @@
     <script src="../assets/js/bootstrap.bundle.minV5.js"></script>
     <script src="../assets/js/swiper-bundle.min.js"></script>
     <script src="../assets/js/custom.js"></script>
-
+    <script>
+        $(document).ready(function() {
+          // Add new row
+          $(document).on('click', '#addingRow', function(e) {
+            e.preventDefault();
+            let clonedRow = $('.rowToClone').first().clone(); 
+            console.log(clonedRow);
+            clonedRow.find('input').val(''); 
+            $('.rowToClone').last().after(clonedRow);
+          });
+    
+          // Remove row
+          $(document).on('click', '#removeRow', function(e) {
+            e.preventDefault();
+            if ($('.rowToClone').length > 1) { 
+              $(this).parents('.rowRemove ').remove();
+            }
+          });
+        });
+      </script>
   </body>
 </html>
