@@ -3521,3 +3521,16 @@ img {
     }
   }
 }
+
+.betaVersion {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #1b8354;
+  color: #fff;
+  padding: 5px 5px 7px;
+  border-radius: 0 0 5px 5px;
+  font-size: 14px;
+  font-weight: 500;
+  z-index: 5;
+}
