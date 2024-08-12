@@ -4093,7 +4093,9 @@ img {
 @media (max-width: 1400px) {
   /* font 36 */
   .weAreSec .txt .font48,
+  .fullWidthMain .rightCardMn .txtPrs .role,
   .ourNumSec .boxNum .counter,
+  .fullWidthMain .rightCardMn .txtPrs .wordPres,
   .awareness-sec .right-sec .mainTitle span,
   .services-sec .right-sec .mainTitle span,
   .bannerMenu .contentBanner .BNRtxt h1 {
@@ -4189,6 +4191,19 @@ img {
   .services-sec {
     margin: 70px 0;
   }
+  .fullWidthMain .rightCardMn .imgPres {
+    width: 260px;
+    height: 260px;
+    margin-bottom: 25px;
+  }
+  .fullWidthMain .rightCardMn {
+    margin-left: 45px !important;
+    height: 650px;
+  }
+  .borderMemeberCards .membCard .presImg {
+    height: 160px;
+  }
+  /* end 1400 */
 }
 
 @media (max-width: 1700px) {
@@ -4289,6 +4304,16 @@ img {
     width: 50%;
     margin-bottom: 20px;
   }
+  .innerBanner .titleBnr {
+    font-size: var(--display-md-medium-font-size);
+  }
+  .fullWidthMain .hisWord + .p20 {
+    font-size: var(--text-lg-bold-font-size);
+  }
+  .fullWidthMain .rightCardMn .imgPres {
+    width: 225px;
+    height: 225px;
+  }
   /* end 1200 */
 }
 
@@ -4296,6 +4321,8 @@ img {
   .weAreSec .col-md-7,
   .weAreSec .col-md-5,
   .newHome .col-md-6,
+  .fullWidthMain .col-md-4,
+  .fullWidthMain .col-md-8,
   .textWithCards .col-md-6,
   .bannerMenu .contentBanner .BNRtxt p,
   .awareness-sec .col-lg-8,
@@ -4305,6 +4332,7 @@ img {
     width: 100%;
   }
   .ourNumSec .col-md-3,
+  .borderMemeberCards .col-md-3,
   .researchSec .col-md-3 {
     flex: 0 0 auto;
     width: 50%;
@@ -4417,13 +4445,6 @@ img {
   .menuWithBanner .navbarMenu .navbar-nav .dropdown-toggle::after {
     filter: brightness(0) invert(1);
   }
-  /*
-  body .menuWithBanner .navbarMenu .navbar-nav .nav-link::before {
-    background: transparent url(../images/shared/homeMenuIcon.png) no-repeat ;
-    width: 21px;
-    top: 17px;
-    height: 23px;
-  }*/
   .services-sec .right-sec {
     height: auto;
     padding-bottom: 50px;
@@ -4537,6 +4558,22 @@ img {
     margin-top: 15px;
     line-height: 1.2;
   }
+  .fullWidthMain .rightCardMn {
+    margin-left: 45px !important;
+    height: auto;
+    padding: 24px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fullWidthMain .rightCardMn .txtPrs .p24 {
+    text-align: center;
+  }
+  .fullWidthMain .hisWord {
+    padding: 24px 0;
+  }
   /* end 992 */
 }
 
@@ -4555,6 +4592,16 @@ img {
     font-size: var(--text-md-regular-font-size);
     letter-spacing: var(--text-md-regular-letter-spacing);
     line-height: var(--text-md-regular-line-height);
+  }
+  .borderMemeberCards .membCard .presImg {
+    height: 215px;
+  }
+  .borderMemeberCards .membCard,
+  .borderMemeberCards .col-md-3 {
+    width: 100%;
+  }
+  .borderMemeberCards {
+    padding: 24px 0;
   }
   .partners {
     padding-bottom: 100px;
@@ -4634,6 +4681,16 @@ img {
 
 @media (max-width: 574.98px) {
   /* font 24 */
+  .weAreSec .txt .font48,
+  .ourNumSec .boxNum .counter,
+  .awareness-sec .right-sec .mainTitle span,
+  .services-sec .right-sec .mainTitle span,
+  .bannerMenu .contentBanner .BNRtxt h1 {
+    /* font-size: var(--display-xs-semibold-font-size); */
+  }
+  .fullWidthMain .rightCardMn .txtPrs .wordPres {
+    font-size: var(--display-xs-semibold-font-size);
+  }
   .innerBanner .titleBnr {
     font-size: var(--display-xs-semibold-font-size);
   }
