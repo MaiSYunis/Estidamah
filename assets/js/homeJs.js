@@ -1,19 +1,20 @@
 $(document).ready(function () {
 
-  var swiper = new Swiper(".homBanner", {
+
+  var swiper01 = new Swiper(".homBanner", {
     pagination: {
       el: ".homBanner .swiper-pagination",
       clickable: true
     },
   });
-  var swiper = new Swiper(".mySwiperNews", {
+  var swiper02 = new Swiper(".mySwiperNews", {
     pagination: {
-      el: ".mySwiperNews .swiper-pagination",
+      el: ".swiperNewsParent .swiper-pagination",
       clickable: true
     },
   });
 
-  var swiper = new Swiper(".mySwipeOffer", {
+  var swiper03 = new Swiper(".mySwipeOffer", {
     slidesPerView: 3,
     spaceBetween: 24,
     navigation: {
@@ -49,7 +50,7 @@ $(document).ready(function () {
       },
     }
   });
-  var swiper = new Swiper(".mySwipeOffer2", {
+  var swiper04 = new Swiper(".mySwipeOffer2", {
     slidesPerView: 3,
     spaceBetween: 24,
     navigation: {
@@ -85,7 +86,7 @@ $(document).ready(function () {
       },
     }
   });
-  var swiper = new Swiper(".mySwiperElect", {
+  var swiper000 = new Swiper(".mySwiperElect", {
     slidesPerView: 3,
     spaceBetween: 24,
     pagination: {

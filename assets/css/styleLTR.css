@@ -1230,7 +1230,7 @@ img {
     right: 0;
     min-width: 100%;
     width: auto;
-    top: 91px;
+    top: 90px;
     left: 0;
     text-align: left;
     background-color: var(--themes-background-background-SA-flag);
@@ -3829,6 +3829,74 @@ img {
   justify-content: left;
 }
 
+.imageGallery,
+.WSCard {
+  height: 100%;
+  padding: var(--spacing-global-spacing-xl);
+  background-color: var(--themes-background-background-card);
+  border-radius: var(--radius-radius-lg);
+  border: 1px solid;
+  border-color: var(--themes-border-border-neutral-primary);
+}
+
+.imageGallery:hover .img img,
+.WSCard:hover .img img {
+  transform: scale(1.1);
+}
+
+.imageGallery .img,
+.WSCard .img {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.imageGallery .img img,
+.WSCard .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .25s;
+}
+
+.imageGallery .txt .tite,
+.WSCard .txt .tite {
+  margin-bottom: 24px;
+  font-weight: var(--text-xl-semibold-font-weight);
+  color: #1b8354;
+  font-size: var(--text-xl-semibold-font-size);
+  line-height: var(--text-xl-semibold-line-height);
+}
+
+.imageGallery .txt .date,
+.WSCard .txt .date {
+  margin-bottom: 24px;
+}
+
+.imageGallery .txt .date span,
+.WSCard .txt .date span {
+  display: inline-flex;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-global-spacing-xs);
+  padding: var(--spacing-global-spacing-none) var(--spacing-global-spacing-lg) var(--spacing-global-spacing-none) var(--spacing-global-spacing-lg);
+  background-color: var(--themes-tag-tag-background-neutral-light);
+  border-radius: var(--radius-radius-sm);
+  border: 1px solid;
+  color: var(--themes-tag-tag-text-neutral);
+  font-size: 16px;
+  text-align: center;
+  border-color: var(--themes-border-border-neutral-secondary);
+  margin-left: 8px;
+}
+
+.imageGallery .txt .white-btn,
+.WSCard .txt .white-btn {
+  justify-content: left;
+}
+
 .workshop .rightCardMn {
   height: 450px;
   display: flex;
@@ -3874,60 +3942,6 @@ img {
   margin-bottom: 20px;
 }
 
-.workshopCards .WSCard {
-  height: 100%;
-  gap: var(--spacing-card-card-lg-gap);
-  padding: var(--spacing-global-spacing-xl);
-  background-color: var(--themes-background-background-card);
-  border-radius: var(--radius-radius-lg);
-  border: 1px solid;
-  border-color: var(--themes-border-border-neutral-primary);
-}
-
-.workshopCards .WSCard .img {
-  width: 100%;
-  height: 300px;
-  margin-bottom: 24px;
-}
-
-.workshopCards .WSCard .img img {
-  width: 100%;
-  height: 100%;
-}
-
-.workshopCards .WSCard .txt .tite {
-  margin-bottom: 24px;
-  font-weight: var(--text-xl-semibold-font-weight);
-  color: #1b8354;
-  font-size: var(--text-xl-semibold-font-size);
-  line-height: var(--text-xl-semibold-line-height);
-}
-
-.workshopCards .WSCard .txt .date {
-  margin-bottom: 24px;
-}
-
-.workshopCards .WSCard .txt .date span {
-  display: inline-flex;
-  height: 24px;
-  align-items: center;
-  justify-content: center;
-  gap: var(--spacing-global-spacing-xs);
-  padding: var(--spacing-global-spacing-none) var(--spacing-global-spacing-lg) var(--spacing-global-spacing-none) var(--spacing-global-spacing-lg);
-  background-color: var(--themes-tag-tag-background-neutral-light);
-  border-radius: var(--radius-radius-sm);
-  border: 1px solid;
-  color: var(--themes-tag-tag-text-neutral);
-  font-size: 16px;
-  text-align: center;
-  border-color: var(--themes-border-border-neutral-secondary);
-  margin-left: 8px;
-}
-
-.workshopCards .WSCard .txt .white-btn {
-  justify-content: left;
-}
-
 .addRow {
   display: flex;
   padding-top: 22px;
@@ -3946,6 +3960,27 @@ img {
 
 .leftSide {
   justify-content: left;
+}
+
+.filtering {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.filtering .green-btn {
+  padding-top: 20px;
+}
+
+.filtering .inputText {
+  margin-left: 24px;
+  flex-grow: 1;
+  margin-bottom: 0;
+}
+
+.filtering .inputText:first-of-type {
+  flex-grow: 2;
 }
 
 .projects,
@@ -3985,27 +4020,6 @@ img {
   padding-bottom: 24px;
 }
 
-.projects .filtering {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 80px;
-}
-
-.projects .filtering .green-btn {
-  padding-top: 20px;
-}
-
-.projects .filtering .inputText {
-  margin-left: 24px;
-  flex-grow: 1;
-  margin-bottom: 0;
-}
-
-.projects .filtering .inputText:first-of-type {
-  flex-grow: 2;
-}
-
 .betaVersion {
   position: absolute;
   left: 0;
@@ -4017,6 +4031,141 @@ img {
   font-size: 14px;
   font-weight: 500;
   z-index: 5;
+}
+
+.subTitle {
+  font-family: var(--display-md-medium-font-family);
+  font-weight: var(--display-md-medium-font-weight);
+  color: var(--themes-text-text-primary);
+  font-size: var(--display-xs-semibold-font-size);
+  letter-spacing: var(--display-md-medium-letter-spacing);
+  line-height: var(--display-md-medium-line-height);
+  font-style: var(--display-md-medium-font-style);
+  margin-bottom: 24px;
+}
+
+.mediaCenter,
+.eventsPage,
+.DigitalLibrary,
+.newsPage {
+  padding-top: 80px;
+}
+
+.mediaCenter .WSCard .tite,
+.eventsPage .WSCard .tite,
+.DigitalLibrary .WSCard .tite,
+.newsPage .WSCard .tite {
+  margin-bottom: 8px;
+}
+
+.mediaCenter .WSCard .date,
+.mediaCenter .WSCard .p16,
+.eventsPage .WSCard .date,
+.eventsPage .WSCard .p16,
+.DigitalLibrary .WSCard .date,
+.DigitalLibrary .WSCard .p16,
+.newsPage .WSCard .date,
+.newsPage .WSCard .p16 {
+  margin-bottom: 24px;
+}
+
+.mediaCenter .WSCard .img,
+.eventsPage .WSCard .img,
+.DigitalLibrary .WSCard .img,
+.newsPage .WSCard .img {
+  height: 250px;
+}
+
+.mediaCenter .col-md-4,
+.eventsPage .col-md-4,
+.DigitalLibrary .col-md-4,
+.newsPage .col-md-4 {
+  margin-bottom: 24px;
+}
+
+.mediaCenter .pagination,
+.eventsPage .pagination,
+.DigitalLibrary .pagination,
+.newsPage .pagination {
+  margin: 65px 0 80px 0;
+}
+
+.newsDetails {
+  margin: 80px 0;
+}
+
+.newsDetails .headNews .titleNews {
+  font-family: var(--display-md-medium-font-family);
+  font-weight: var(--display-md-medium-font-weight);
+  color: var(--themes-text-text-primary);
+  font-size: var(--display-md-medium-font-size);
+  letter-spacing: var(--display-md-medium-letter-spacing);
+  line-height: var(--display-md-medium-line-height);
+  margin-bottom: 32px;
+}
+
+.newsDetails .headNews .date {
+  margin-bottom: 32px;
+}
+
+.newsDetails .headNews .date span {
+  display: inline-flex;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-global-spacing-xs);
+  padding: var(--spacing-global-spacing-none) var(--spacing-global-spacing-lg) var(--spacing-global-spacing-none) var(--spacing-global-spacing-lg);
+  background-color: var(--themes-tag-tag-background-neutral-light);
+  border-radius: var(--radius-radius-sm);
+  border: 1px solid;
+  color: var(--themes-tag-tag-text-neutral);
+  font-size: var(--text-md-medium-font-size);
+  text-align: center;
+  border-color: var(--themes-border-border-neutral-secondary);
+  margin-left: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-weight: 500;
+}
+
+.newsDetails .imgNews {
+  height: 568px;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.newsDetails .imgNews img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.eventsPage .WSCard .tite {
+  margin-bottom: 24px;
+}
+
+.imageGallery .imageGallery {
+  height: 250px;
+}
+
+.imageGallery .txt .tite {
+  margin-bottom: 0;
+}
+
+.DigitalLibrary .filtering {
+  margin-bottom: 50px;
+}
+
+.DigitalLibrary .filtering .inputText:first-of-type {
+  flex-grow: 1.3;
+}
+
+.DigitalLibrary .img {
+  height: 300px;
+}
+
+.DigitalLibrary .txt .tite {
+  margin-bottom: 24px;
 }
 
 @media (min-width: 1400px) {
@@ -4203,6 +4352,12 @@ img {
   .borderMemeberCards .membCard .presImg {
     height: 160px;
   }
+  .anotherServ .wrapperCards {
+    flex-wrap: wrap;
+  }
+  .anotherServ .wrapperCards .cardOther {
+    width: 33.333%;
+  }
   /* end 1400 */
 }
 
@@ -4314,6 +4469,34 @@ img {
     width: 225px;
     height: 225px;
   }
+  .imageGallery .img,
+  .WSCard .img {
+    height: 200px;
+  }
+  .imageGallery .txt .tite,
+  .WSCard .txt .tite {
+    font-size: var(--text-lg-bold-font-size);
+    line-height: 1.2;
+  }
+  .workshop .txtRight .supTitle {
+    font-size: var(--display-xs-semibold-font-size);
+  }
+  .workshop .txtRight .title {
+    font-size: var(--display-md-medium-font-size);
+  }
+  .imageGallery .txt .date span,
+  .WSCard .txt .date span {
+    font-size: var(--text-xs-regular-font-size);
+  }
+  .imageGallery .txt .date span img,
+  .WSCard .txt .date span img {
+    width: 15px;
+  }
+  .imageGallery .txt .white-btn a,
+  .WSCard .txt .white-btn a {
+    max-height: 30px;
+    height: 30px;
+  }
   /* end 1200 */
 }
 
@@ -4332,6 +4515,7 @@ img {
     width: 100%;
   }
   .ourNumSec .col-md-3,
+  .workshopCards .col-md-4,
   .borderMemeberCards .col-md-3,
   .researchSec .col-md-3 {
     flex: 0 0 auto;
@@ -4574,6 +4758,15 @@ img {
   .fullWidthMain .hisWord {
     padding: 24px 0;
   }
+  .fullWidthMain .rightCardMn {
+    min-height: 250px;
+  }
+  .titleCard {
+    font-size: var(--display-xs-semibold-font-size);
+  }
+  .anotherServ .wrapperCards .cardOther {
+    width: 50%;
+  }
   /* end 992 */
 }
 
@@ -4714,7 +4907,8 @@ img {
     font-size: var(--text-sm-regular-font-size);
   }
   /* font 12 */
-  .Evaluation .evaluationBox span, .Evaluation .evaluationBox strong,
+  .Evaluation .evaluationBox span,
+  .Evaluation .evaluationBox strong,
   .white-btn a span,
   .Evaluation .left-sec .last-edit span,
   .Evaluation2 .alertEvaluation .left p,
@@ -4802,7 +4996,7 @@ img {
   }
   .services-sec {
     margin: 0;
-    padding: 40px 0 25px  0;
+    padding: 40px 0 25px 0;
   }
   .services-sec .right-sec.with-shape {
     width: 100%;
